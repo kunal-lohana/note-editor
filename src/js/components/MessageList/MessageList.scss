@@ -1,0 +1,85 @@
+.texts{
+    background-color: #ffffff;
+    max-height: 400px;
+    padding: 20px 30px;
+    overflow: auto;
+    border-radius: 10px;
+    min-height: 400px;
+    .select{
+        border: none;
+        height: 36px;
+        margin-top: 1px;
+        margin-right: 15px;
+        border-radius: 5px;
+        width: 245px;
+    }
+    ul li {
+        list-style: none;
+        margin-bottom: 25px;
+        position: relative;
+        .notShow{
+            display: none;
+            .flex{
+                display: flex;
+                .submit-btn{
+                    background-color: #6c757d;
+                    height: 39px;
+                    cursor: pointer;
+                    border-radius: 5px;
+                    padding: 7px;
+                    margin-left: 20px;
+                    color: #fff;
+                }
+            }
+        }
+        .show{
+            display: inline;
+        }
+        .drag-items {
+            position: absolute;
+            left: -29px;
+            background-color: #1313128f;
+            padding: 7px;
+            border-radius: 30px;
+        }
+        .review-form {
+            .button{
+                background-color: #6c757d;
+                width: 74px;
+                cursor: pointer;
+                border-radius: 5px;
+                margin-top: 15px;
+                padding: 10px;
+                color: #fff;
+            }
+        }
+    }
+}
+.texts::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+/* .text::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+} */
+ 
+.texts::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+  border-radius: 10px;
+}
+.drag_img{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+/* drag and drop */
+.item-dropzone-area {
+    height: 6rem;
+    background: #888;
+    opacity: 0.8;
+    animation-duration: 0.5s;
+    animation-name: nodeInserted;
+    margin-left: 0.6rem;
+    margin-right: 0.6rem;
+}
