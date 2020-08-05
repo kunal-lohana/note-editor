@@ -16,7 +16,6 @@ config = {
     },
     output: {
         filename :'js/[name].[hashcode].js',
-        chunkFilename: 'js/[id].[chunkhash].js',
         path :BUILD_DIR
     },
     
