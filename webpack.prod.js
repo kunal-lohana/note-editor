@@ -56,7 +56,7 @@ config = {
     },
     plugins: [
         new CleanWebpackPlugin({
-            cleanAfterEveryBuildPatterns: ['build']
+            cleanOnceBeforeBuildPatterns: ['build']
         }),
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, "src", "index.html"),
@@ -76,14 +76,6 @@ config = {
             chunkFilename:'css/[id].[hash].css',
             disable : false,
             ignoreOrder: true
-        }),
-        new CopyWebpackPlugin({
-            patterns: [
-                {
-                    from: path.resolve(__dirname, './node_modules'),
-                    to: path.resolve(__dirname, "build/src", "node_modules")
-                }
-            ]
         })
     ],
     optimization: {
